@@ -1,1 +1,2 @@
-## This is my dummy file for testing purposes
+## First Line
+## Second line
