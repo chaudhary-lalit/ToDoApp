@@ -5,6 +5,12 @@ terraform {
       version = "4.32.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "todo-app-rg"
+    storage_account_name = "stgtodoapp"
+    container_name       = "containertodoapp"
+    key                  = "lalit.tfstate"
+  }
 }
 
 provider "azurerm" {
